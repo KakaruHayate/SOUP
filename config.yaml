@@ -1,0 +1,21 @@
+data:
+  f0_min: 65
+  f0_max: 1100
+  sampling_rate: 44100
+  block_size: 512 # Equal to hop_length
+  duration: 2 # Audio duration during training, must be less than the duration of the shortest audio clip
+  train_path: data/train # Create a folder named "audio" under this path and put the audio clip in it
+  valid_path: data/val # Create a folder named "audio" under this path and put the audio clip in it
+device: cuda
+env:
+  expdir: exp/pitchnet-test
+  gpu_id: 0
+train:
+  num_workers: 0 # if your cpu and gpu are both very strong, set to 0 may be faster!
+  batch_size: 1 # do not change
+  cache_all_data: true # Save Internal-Memory if it is false, but may be slow
+  epochs: 100000
+  interval_log: 100
+  interval_val: 10000
+  lr: 0.0005
+  weight_decay: 0.00000001
