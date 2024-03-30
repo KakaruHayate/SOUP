@@ -1,0 +1,11 @@
+librosa
+matplotlib
+numpy
+onnx==1.14.0
+onnxruntime==1.17.0
+pyworld
+PyYAML
+SoundFile
+torch
+torchaudio
+tqdm
