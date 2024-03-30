@@ -1,7 +1,8 @@
 # SOUP
 [中文文档](README_cn.md)
+
 SOUP: Singing-Oriented Unreliable Pitcher.
-~Automatic Tuning~
+~Automatic Out Of Tune~
 ## Overview
 It's time to abandon the conventional classical music! SOUP can twist the pitch of the input human voice to obtain a deviated f0, which will inspire your creative inspiration and move towards the future of music!
 Next, we will show you the effect of this project. In the experiment, we used the [Diffusion-SVC](https://github.com/CNChTu/Diffusion-SVC) project (but we recommend using [DDSP-SVC](https://github.com/yxlllc/DDSP-SVC)), and inserted SOUP after the f0 extractor:
